@@ -1,0 +1,7 @@
+- name: configure /etc/hosts
+  lineinfile:
+    dest: /etc/hosts
+    line: "{{ item.ip }}	{{ item.alias }}"
+    regexp: "^{{ item.ip }}:"
+  with_items: '{{hosts}}'
+

@@ -1,0 +1,8 @@
+
+hosts:
+  - ip: 127.0.0.1
+    alias: localhost, www
+  - ip: '::1'
+    alias: localhost, ip6-localhost, ip6-loopback, www
+
+
